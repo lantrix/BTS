@@ -10,7 +10,7 @@ function CreateHost([string]$Name, [string]$HostType, [boolean]$AuthTrusted, [st
     if (test-path $Name)
     {   
         # Host allready exists
-        write-host $Name ' allready exists'
+        write-host $Name ' already exists'
     }
     else
     {
