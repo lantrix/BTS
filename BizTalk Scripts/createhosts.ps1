@@ -243,14 +243,39 @@ function CheckDeployedApplications
 
 ################################ Set your own properties here ##################################
  
-# Name of the group the BizTalk hosts should run under
-[string]$NtGroupName='BizTalk Application Users'
+# Name of the group the Default BizTalk hosts should run under
+[string]$NtGroupNameDefault='BTPOC\BizTalk Application Users'
+# Name of the group the Receive BizTalk hosts should run under
+[string]$NtGroupNameReceive='BTPOC\BizTalk Application Users'
+# Name of the group the Send BizTalk hosts should run under
+[string]$NtGroupNameSend='BTPOC\BizTalk Application Users'
+# Name of the group the Processing BizTalk hosts should run under
+[string]$NtGroupNameProcess='BTPOC\BizTalk Application Users'
+# Name of the group the Tracking BizTalk hosts should run under
+[string]$NtGroupNameTracking='BTPOC\BizTalk Application Users'
  
-# The username under which the host instances should run
-$AccountName='svc_BTSHost'
+# The username under which the default host instances should run
+$AccountNameDefault='biztalk_poc'
+# The username under which the receive host instances should run
+$AccountNameReceive='biztalk_poc'
+# The username under which the send host instances should run
+$AccountNameSend='biztalk_poc'
+# The username under which the process host instances should run
+$AccountNameProcess='biztalk_poc'
+# The username under which the tracking host instances should run
+$AccountNameTracking='biztalk_poc'
  
-# The password of the user under which the host instances should run
-$Password='Albron@123'
+# The password of the user under which the default host instances should run
+$PasswordDefault='P@ssw0rd1'
+# The password of the user under which the receive host instances should run
+$PasswordReceive='P@ssw0rd1'
+# The password of the user under which the send host instances should run
+$PasswordSend='P@ssw0rd1'
+# The password of the user under which the process host instances should run
+$PasswordProcess='P@ssw0rd1'
+# The password of the user under which the tracking host instances should run
+$PasswordTracking='P@ssw0rd1'
+ 
  
 ################################ Done ##########################################################
 
