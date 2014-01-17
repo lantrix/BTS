@@ -243,8 +243,6 @@ function CheckDeployedApplications
 
 ################################ Set your own properties here ##################################
  
-# Name of the group the Default BizTalk hosts should run under
-[string]$NtGroupNameDefault='BTPOC\BizTalk Application Users'
 # Name of the group the Receive BizTalk hosts should run under
 [string]$NtGroupNameReceive='BTPOC\BizTalk Application Users'
 # Name of the group the Send BizTalk hosts should run under
@@ -254,8 +252,6 @@ function CheckDeployedApplications
 # Name of the group the Tracking BizTalk hosts should run under
 [string]$NtGroupNameTracking='BTPOC\BizTalk Application Users'
  
-# The username under which the default host instances should run
-$AccountNameDefault='biztalk_poc'
 # The username under which the receive host instances should run
 $AccountNameReceive='biztalk_poc'
 # The username under which the send host instances should run
@@ -265,8 +261,6 @@ $AccountNameProcess='biztalk_poc'
 # The username under which the tracking host instances should run
 $AccountNameTracking='biztalk_poc'
  
-# The password of the user under which the default host instances should run
-$PasswordDefault='P@ssw0rd1'
 # The password of the user under which the receive host instances should run
 $PasswordReceive='P@ssw0rd1'
 # The password of the user under which the send host instances should run
