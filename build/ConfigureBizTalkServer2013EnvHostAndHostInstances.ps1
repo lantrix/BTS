@@ -297,10 +297,14 @@ function ConfiguringBizTalkServerHostAndHostInstances
 	CreateBizTalkAdapterHandler 'FILE' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'MQSeries' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'MSMQ' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'SB-Messaging' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'SFTP' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'WCF-BasicHttpRelay' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-Custom' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetMsmq' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetNamedPipe' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetTcp' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'WCF-NetTcpRelay' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'Windows SharePoint Services' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	#32 bits adapters
 	CreateBizTalkAdapterHandler 'FTP' 'Receive' $receive32HostName $defaultHostName $false $removeOriginalAdapterHandler
@@ -322,13 +326,18 @@ function ConfiguringBizTalkServerHostAndHostInstances
 	CreateBizTalkAdapterHandler 'HTTP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'MQSeries' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'MSMQ' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'SB-Messaging' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'SFTP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'SOAP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'SMTP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-BasicHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'WCF-BasicHttpRelay' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-Custom' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetMsmq' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetNamedPipe' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetTcp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'WCF-NetTcpRelay' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'WCF-WebHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-WSHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'Windows SharePoint Services' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	#32 bits adapters
