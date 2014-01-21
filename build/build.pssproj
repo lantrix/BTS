@@ -27,7 +27,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ConfigureBizTalkServerEnvHostAndHostInstances.ps1" />
+    <Folder Include="2010\" />
+    <Folder Include="2013\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2010\ConfigureBizTalkServer2010EnvHostAndHostInstances.ps1" />
+    <Compile Include="2013\ConfigureBizTalkServer2013EnvHostAndHostInstances.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
